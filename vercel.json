@@ -1,18 +1,6 @@
 {
-  /*
-    Vercel static config for the cloned portfolio.
-
-    Why this is simple:
-    - This project is a fully static export (plain HTML/CSS/JS).
-    - Each route already has a real HTML file (e.g. `/projects/nhs/index.html`),
-      so Vercel can serve deep links directly without special rewrites.
-    - We don't override that behaviour to avoid fighting with Framer's own
-      client-side routing.
-
-    On the Vercel dashboard, choose:
-    - Framework preset: "Other"
-    - Output directory: "."
-  */
-  "version": 3
+  "version": 3,
+  "cleanUrls": true,
+  "trailingSlash": false
 }
 
