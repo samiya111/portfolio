@@ -20,3 +20,8 @@ html {
   outline-offset: 3px;
 }
 
+
+/* Hide playground header on homepage */
+.framer-1ks9ibs-container {
+  display: none !important;
+}
