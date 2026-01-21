@@ -1,0 +1,22 @@
+/* 
+  Local clone shim CSS
+  --------------------
+  The pages in this repo are a static snapshot of the live Framer site markup.
+  Framer SSR already includes a large amount of inline CSS in each HTML file.
+
+  We keep this file intentionally small and focused on:
+  - Consistent base defaults across static hosts
+  - Fixes for common static-host quirks (e.g., missing smooth scrolling)
+  - A safe place for any future tweaks without editing the Framer-generated blocks
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prefer Framer's own focus styles, but ensure something is visible in case a host injects CSS. */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+

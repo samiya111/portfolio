@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <script>
+      // GitHub Pages-style SPA fallback:
+      // Preserve the originally requested path and send the user to `/`,
+      // where `js/main.js` restores the path for the Framer router.
+      (function () {
+        try {
+          sessionStorage.setItem(
+            "redirectPath",
+            window.location.pathname + window.location.search + window.location.hash
+          );
+        } catch (e) {}
+        window.location.replace("/");
+      })();
+    </script>
+  </body>
+</html>
+
