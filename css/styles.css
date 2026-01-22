@@ -20,8 +20,19 @@ html {
   outline-offset: 3px;
 }
 
-
 /* Hide playground header on homepage */
 .framer-1ks9ibs-container {
   display: none !important;
+}
+
+/* Header color adjustment for dark backgrounds */
+.header-on-dark a,
+.header-on-dark p,
+.header-on-dark span,
+.header-on-dark div[data-framer-component-type="RichTextContainer"] {
+  color: #fff !important;
+}
+
+.header-on-dark .framer-text {
+  --framer-text-color: #fff !important;
 }
